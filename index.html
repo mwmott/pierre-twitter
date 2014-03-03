@@ -414,6 +414,7 @@ body {
 	width: 100%;
 	overflow-x: hidden;
 	clear: both;
+	float:left;
 }
 
 .post {
@@ -972,6 +973,14 @@ line-height: 42px;
 
 }
 
+#sidebar {
+    float: right;
+    width: 260px;
+    padding-right: 4px;
+    padding-bottom: 120px;
+    min-height: 100%;
+}
+
 {CustomCSS}
     
 </style>
@@ -1007,9 +1016,7 @@ line-height: 42px;
 					</ul>
 				</div>
 				{/block:IfShowNavigation}
-                
-                
-                
+				
 				<div class="blog-title">
                 
                     {block:IfHeaderImage}
@@ -1028,10 +1035,15 @@ line-height: 42px;
 				
 			
 			</div> <!-- header end -->
-			
-			<div id="content">
+					   <div id="sidebar">
+                <a class="twitter-timeline"  href="https://twitter.com/eyesonCAR"  data-widget-id="435490209422000128">Tweets by @eyesonCAR
+                </a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div>
+			<div id="content" style="position: relative">
             {block:Posts}
-			
 				
                 {block:Text}
                 <!-- TEXT POST 
